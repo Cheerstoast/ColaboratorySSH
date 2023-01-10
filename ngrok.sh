@@ -4,9 +4,22 @@ echo "Download ngrok"
 echo "======================="
 wget -O ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
-./ngrok authtoken K7sHWI1hCsgCWtGrzyFoV7UYJr_4Uuvnt1k33VWHnEzJ8u7m
+read -p "Paste Ngrok Authtoken: " CRP
+./ngrok authtoken $CRP 
+
 clear
-./ngrok tcp --region au 22 &>/dev/null &
+echo "======================="
+echo choose ngrok region
+echo "======================="
+echo "us - United States (Ohio)"
+echo "eu - Europe (Frankfurt)"
+echo "ap - Asia/Pacific (Singapore)"
+echo "au - Australia (Sydney)"
+echo "sa - South America (Sao Paulo)"
+echo "jp - Japan (Tokyo)"
+echo "in - India (Mumbai)"
+read -p "choose ngrok region: " CRP
+./ngrok tcp --region $CRP 22 &>/dev/null &
 echo "======================="
 echo Updating Please Wait
 echo "======================="
