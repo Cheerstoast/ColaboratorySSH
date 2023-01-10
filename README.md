@@ -1,1 +1,1 @@
-https://colab.research.google.com/github/cheerstoast/colaboratoryssh/SSH_GPU.ipynb
+https://colab.research.google.com/github/Cheerstoast/ColaboratorySSH/SSH_GPU.ipynb
